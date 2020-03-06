@@ -1,0 +1,22 @@
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .tabs .tab {
+    width: 100%;
+  }
+  .tabs .tab > label {
+    z-index: 999;
+    width: 100%;
+    margin-top: 1px;
+  }
+  .tabs .content {
+    position: relative;
+    display: none;
+    top: 1px;
+  }
+  .tabs > .tab > [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }
+  .tabs > .tab > [id^="tab"]:checked + label {
+    width: 100%;
+  }
+}
